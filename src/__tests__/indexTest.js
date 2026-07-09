@@ -3,7 +3,9 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../App";
 import { sampleProducts } from "../components/ProductList";
 import "@testing-library/jest-dom";
-import { test, expect } from "vitest";
+// Fallback for Vitest when globals are disabled remotely, safely ignoring Jest local globals
+const test = globalThis.test || globalThis.it;
+const expect = globalThis.expect;
 
 test("toggles dark mode on button click", () => {
   render(<App />);
