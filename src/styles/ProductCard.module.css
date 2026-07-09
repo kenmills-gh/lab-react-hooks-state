@@ -1,5 +1,17 @@
-/* TODO (optional): Style the product card container */
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  max-width: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
 
-/* TODO (optional): Add special styling for out-of-stock products */
+.outOfStock {
+  border-color: #ff4d4d;
+  opacity: 0.7;
+}
 
-/* TODO (optional): Style the add/remove button */
+.outOfStock h3 {
+  text-decoration: line-through;
+}
